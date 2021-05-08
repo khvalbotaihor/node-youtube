@@ -11,6 +11,6 @@ fs.mkdir(path.join(__dirname, 'test'),(err) => {
 })*/
 
 const filePath = path.join(__dirname, 'test', 'text.txt')
-fs.writeFile(filePath, 'Hello NodeJS', () => {
+fs.writeFile(filePath, 'Hello NodeJS', (err) => {
 
 })
