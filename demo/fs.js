@@ -25,3 +25,7 @@ fs.writeFile(filePath, 'Hello NodeJS', err => {
         console.log('File was created')
     })
 })*/
+
+fs.readFile(filePath, (err, content) =>{
+
+})
