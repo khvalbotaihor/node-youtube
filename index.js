@@ -2,4 +2,4 @@ const chalk = require('chalk');
 
 
 
-console.log('Hello nodejs')
+console.log(chalk.blue('Hello nodejs'))
