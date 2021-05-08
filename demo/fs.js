@@ -26,10 +26,11 @@ fs.writeFile(filePath, 'Hello NodeJS', err => {
     })
 })*/
 
-fs.readFile(filePath, (err, content) =>{
+fs.readFile(filePath, 'utf-8',(err, content) =>{
     if (err) {
         throw err
     }
-    const data = Buffer.from(content)
-    console.log("Content: ", data.toString())
+    console.log(content)
+/*    const data = Buffer.from(content)
+    console.log("Content: ", data.toString())*/
 })
