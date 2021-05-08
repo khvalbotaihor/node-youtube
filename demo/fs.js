@@ -30,5 +30,6 @@ fs.readFile(filePath, (err, content) =>{
     if (err) {
         throw err
     }
-    console.log("Content: ", content)
+    const data = Buffer.from(content)
+    console.log("Content: ", data.toString())
 })
