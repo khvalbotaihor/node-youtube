@@ -7,3 +7,5 @@ console.log("Processor architecture: ", os.arch())
 console.log("Processors information: ", os.cpus())
 
 console.log("Free space: ", os.freemem())
+
+console.log("All memory: ", os.totalmem())
