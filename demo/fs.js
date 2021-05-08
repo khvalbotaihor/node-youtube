@@ -27,5 +27,7 @@ fs.writeFile(filePath, 'Hello NodeJS', err => {
 })*/
 
 fs.readFile(filePath, (err, content) =>{
-
+    if (err) {
+        throw err
+    }
 })
