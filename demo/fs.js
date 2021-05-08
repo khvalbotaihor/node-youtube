@@ -16,4 +16,10 @@ fs.writeFile(filePath, 'Hello NodeJS', err => {
         throw err
     }
     console.log('File was created')
+    fs.writeFile(filePath, '\nHello one more time', err => {
+        if (err) {
+            throw err
+        }
+        console.log('File was created')
+    })
 })
