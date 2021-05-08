@@ -30,4 +30,5 @@ fs.readFile(filePath, (err, content) =>{
     if (err) {
         throw err
     }
+    console.log("Content: ", content)
 })
