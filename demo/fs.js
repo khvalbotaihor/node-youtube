@@ -9,3 +9,5 @@ fs.mkdir(path.join(__dirname, 'test'),(err) => {
     }
     console.log('The directory is created')
 })*/
+
+const filePath = path.join(__dirname, 'test', 'text.txt')
