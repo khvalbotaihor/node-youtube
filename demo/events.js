@@ -23,3 +23,5 @@ class Dispatcher extends EventEmmiter{
         this.emit(eventName, data)
     }
 }
+
+const dis = new Dispatcher()
