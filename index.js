@@ -7,6 +7,7 @@ console.log(__dirname)
 console.log(__filename)*/
 
 const http = require('http')
+const fs = require('fs')
 
 const server = http.createServer((req, res) => {
     res.writeHead(200, {
