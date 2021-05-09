@@ -11,3 +11,5 @@ console.log("Free space: ", os.freemem())
 console.log("All memory: ", os.totalmem())
 
 console.log("Home directory: ", os.homedir())
+
+console.log("System is already running during: ", os.uptime())
