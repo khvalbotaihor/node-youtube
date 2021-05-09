@@ -8,6 +8,10 @@ console.log(__filename)*/
 
 const http = require('http')
 
-http.createServer((req, res) => {
-    res.end()
+const server = http.createServer((req, res) => {
+    res.end('Hello NodeJS')
+})
+
+server.listen(3000, () =>{
+
 })
