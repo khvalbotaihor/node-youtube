@@ -14,7 +14,7 @@ setTimeout(() => {
 },500)*/
 
 class Dispatcher extends EventEmmiter{
-    subscribe(){
-
+    subscribe(eventName, cb){
+        console.log('[Subscribe]')
     }
 }
