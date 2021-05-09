@@ -15,10 +15,10 @@ setTimeout(() => {
 
 class Dispatcher extends EventEmmiter{
     subscribe(eventName, cb){
-        console.log('[Subscribe]')
+        console.log('[Subscrib...]')
         this.on(eventName, cb)
     }
-    dispatch(){
-
+    dispatch(eventName, data){
+        console.log('[Dispatching...]')
     }
 }
