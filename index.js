@@ -21,6 +21,16 @@ const server = http.createServer((req, res) => {
             })
             res.end(data)
         })
+    }else if (req.url === '/contact'){
+        fs.readFile(path.join(__dirname, 'public', 'contsct.html'), (err, data) => {
+            if (err) {
+                throw err
+            }
+            res.writeHead(200, {
+                'Content-type': 'text/html'
+            })
+            res.end(data)
+        })
     }
 
 })
