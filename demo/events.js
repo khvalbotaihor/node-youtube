@@ -25,3 +25,9 @@ class Dispatcher extends EventEmmiter{
 }
 
 const dis = new Dispatcher()
+
+dis.dispatch('aa', {aa: 22})
+
+dis.subscribe('aa', data => {
+    console.log('On: aa', data)
+})
