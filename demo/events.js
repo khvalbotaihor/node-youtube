@@ -1,6 +1,6 @@
 const EventEmmiter = require('events')
 
-const emitter = new EventEmmiter()
+/*const emitter = new EventEmmiter()
 
 emitter.on('anything', data => {
     console.log('On: anything', data)
@@ -11,4 +11,10 @@ emitter.emit('anything', {b: 2})
 
 setTimeout(() => {
     emitter.emit('anything', {c: 3})
-},500)
+},500)*/
+
+class Dispatcher extends EventEmmiter{
+    subscribe(){
+
+    }
+}
