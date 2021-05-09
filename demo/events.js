@@ -7,3 +7,5 @@ emitter.on('anything', data => {
 })
 
 emitter.emit('anything', {a: 1})
+emitter.emit('anything', {b: 2})
+
