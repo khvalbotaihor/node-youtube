@@ -7,3 +7,7 @@ console.log(__dirname)
 console.log(__filename)*/
 
 const http = require('http')
+
+http.createServer((req, res) => {
+
+})
