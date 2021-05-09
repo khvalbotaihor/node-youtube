@@ -9,3 +9,5 @@ console.log("Processors information: ", os.cpus())
 console.log("Free space: ", os.freemem())
 
 console.log("All memory: ", os.totalmem())
+
+console.log("Home directory: ", os.homedir())
