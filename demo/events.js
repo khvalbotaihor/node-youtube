@@ -20,5 +20,6 @@ class Dispatcher extends EventEmmiter{
     }
     dispatch(eventName, data){
         console.log('[Dispatching...]')
+        this.emit(eventName, data)
     }
 }
