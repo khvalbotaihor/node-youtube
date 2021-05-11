@@ -11,7 +11,7 @@ const fs = require('fs')
 const path = require('path')
 const server = http.createServer((req, res) => {
 
-    if (req.url === '/') {
+/*    if (req.url === '/') {
         fs.readFile(path.join(__dirname, 'public', 'index.html'), (err, data) => {
             if (err) {
                 throw err
@@ -31,7 +31,7 @@ const server = http.createServer((req, res) => {
             })
             res.end(data)
         })
-    }
+    }*/
 
 })
 
