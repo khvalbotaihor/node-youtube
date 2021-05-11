@@ -34,7 +34,7 @@ const server = http.createServer((req, res) => {
     }*/
 let filePath = path.join(__dirname, 'public', req.url==='/' ? 'index.html' : req.url)
     console.log(filePath)
-    fs.readFile(filePath, (err, data) => {
+    fs.readFile(filePath, (err, content) => {
         if (err){
             fs.readFile(path.join(__dirname, 'public','error.html'), (err, data) =>{
                 if (err){
@@ -48,7 +48,10 @@ let filePath = path.join(__dirname, 'public', req.url==='/' ? 'index.html' : req
                 }
             })
         }else{
-
+            res.writeHead(200, {
+                'Content-Type': 'text/html'
+            })
+            res.end(content)
         }
     })
     res.end()
