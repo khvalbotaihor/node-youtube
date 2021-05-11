@@ -39,6 +39,9 @@ let filePath = path.join(__dirname, 'public', req.url==='/' ? 'index.html' : req
             fs.readFile(path.join(__dirname, 'public','error.html'), (err, data) =>{
                 if (err){
                     res.writeHead(500)
+                    res.end('Error')
+                }else {
+
                 }
             })
         }
