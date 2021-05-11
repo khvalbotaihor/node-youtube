@@ -54,7 +54,6 @@ let filePath = path.join(__dirname, 'public', req.url==='/' ? 'index.html' : req
             res.end(content)
         }
     })
-    res.end()
 })
 
 server.listen(3000, () => {
