@@ -34,8 +34,10 @@ const server = http.createServer((req, res) => {
     }*/
 let filePath = path.join(__dirname, 'public', req.url==='/' ? 'index.html' : req.url)
     console.log(filePath)
-    fs.readFile(filePath, (err) => {
-        throw err
+    fs.readFile(filePath, (err, data) => {
+        if (err){
+
+        }
     })
     res.end()
 })
