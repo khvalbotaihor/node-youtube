@@ -44,6 +44,7 @@ let filePath = path.join(__dirname, 'public', req.url==='/' ? 'index.html' : req
                     res.writeHead(200, {
                         'Content-Type': 'text/html'
                     })
+                    res.end(data)
                 }
             })
         }
