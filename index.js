@@ -36,7 +36,9 @@ let filePath = path.join(__dirname, 'public', req.url==='/' ? 'index.html' : req
     console.log(filePath)
     fs.readFile(filePath, (err, data) => {
         if (err){
+            fs.readFile(path.join(__dirname, 'public','error.html'), () =>{
 
+            })
         }
     })
     res.end()
