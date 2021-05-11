@@ -32,7 +32,7 @@ const server = http.createServer((req, res) => {
             res.end(data)
         })
     }*/
-
+let filePath = path.join(__dirname, 'public', req.url==='/' ? 'index.html' : req.url)
 })
 
 server.listen(3000, () => {
