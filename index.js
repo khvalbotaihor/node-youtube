@@ -47,6 +47,8 @@ let filePath = path.join(__dirname, 'public', req.url==='/' ? 'index.html' : req
                     res.end(data)
                 }
             })
+        }else{
+
         }
     })
     res.end()
