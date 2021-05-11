@@ -41,7 +41,9 @@ let filePath = path.join(__dirname, 'public', req.url==='/' ? 'index.html' : req
                     res.writeHead(500)
                     res.end('Error')
                 }else {
-
+                    res.writeHead(200, {
+                        'Content-Type': 'text/html'
+                    })
                 }
             })
         }
