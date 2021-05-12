@@ -34,6 +34,12 @@ const server = http.createServer((req, res) => {
     }*/
 let filePath = path.join(__dirname, 'public', req.url==='/' ? 'index.html' : req.url)
 const ext = path.extname(filePath)
+
+    if (!ext){
+        filePath += '.html' +
+            ''
+    }
+
     console.log(filePath)
     fs.readFile(filePath, (err, content) => {
         if (err){
