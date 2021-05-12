@@ -75,6 +75,8 @@ let contentType = 'text/html'
     })
 })
 
+const PORT = process.env.PORT
+
 server.listen(3000, () => {
     console.log('Server has been started...')
 })
