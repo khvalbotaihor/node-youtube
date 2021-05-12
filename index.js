@@ -34,6 +34,11 @@ const server = http.createServer((req, res) => {
     }*/
 let filePath = path.join(__dirname, 'public', req.url==='/' ? 'index.html' : req.url)
 const ext = path.extname(filePath)
+let contentType = 'text/html'
+
+    switch (ext) {
+
+    }
 
     if (!ext){
         filePath += '.html' +
