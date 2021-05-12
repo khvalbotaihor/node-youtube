@@ -41,7 +41,7 @@ let contentType = 'text/html'
             contentType = 'text/css'
             break
         case '.js':
-
+            contentType = 'text/javascript'
             break
         default:
 
