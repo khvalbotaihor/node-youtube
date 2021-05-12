@@ -37,6 +37,13 @@ const ext = path.extname(filePath)
 let contentType = 'text/html'
 
     switch (ext) {
+        case '.css':
+            contentType = 'text/css'
+            break
+        case '.js':
+
+            break
+        default:
 
     }
 
