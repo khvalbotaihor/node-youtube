@@ -44,7 +44,7 @@ let contentType = 'text/html'
             contentType = 'text/javascript'
             break
         default:
-
+            contentType = 'text/html'
     }
 
     if (!ext){
